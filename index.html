@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jaron Truman</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="assets/stylesheets/ws_reset.css">
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest">
+    <script src="assets/javascripts/handlebars.js"></script>
+    <script src="assets/javascripts/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Jaron Truman</h1>
+      <p>
+        [ <span class="string">"Student"</span>, <span class="string">"Full Stack Web Developer"</span> ]
+      </p>
+      <nav>
+        <ul>
+          <li><a class="active" data-id="about" href="#">About</a></li>
+          <li><a data-id="mine" href="#">My Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    </main>
+    <footer>
+    </footer>
+    
+    <script id="about" type="text/x-handlebars">
+      <article>
+        <h2>About Me</h2>
+        <p>
+          Hi, my name is Jaron and I'm a fledgling Software Developer looking for an opportunity to get my career started. I'm still in the process of completing this portfolio site. I work on it occassionly as a side project, but it should have most of what I'd like to display. I'm making this simple site from scratch and plan on using it to direct family, friends and, of course, potential employers somewhere to demonstrate some of the skills that I have acquired while studying Full Stack Web Development at <a href="https://launchschool.com/" target="_blank">LaunchSchool</a>.
+        </p>
+        <p>
+          My journey in Software Development started in 2014. At this point in my life I didn't really have a "Career Path". I had simply been working hard to get to the best position I could within the company I was working for. That changed when I stumbled across a website called <a href="https://www.codeavengers.com/" target="_blank">CodeAvengers</a>. I started out on their free trials just out of curiosity and was instantly hooked! After I completed the free portion of their program, I jumped right in and paid to have access to their full courses and thoroughly enjoyed it. Unfortunately, the company I was working for at the time (ExtremeBeam) started going into turbulance and my focus fell back into work.
+        </p>
+        <p>
+          About two years later, I was now working as a Purchasing Manager for a Psychiatric Hospital. I had been in this position for about a year and everything was going smooth. I started re-thinking Software Development, but this time much more seriously. After some long planning, praying and waiting, an opportunity opened up for my wife and I to move in with family, which would allow me to focus my efforts on full-time learning. My wife and I had looked at around a dozen different online programs before deciding on <a href="https://launchschool.com/" target="_blank">LaunchSchool</a>. We chose them because of their Mastery-Based learning model. We didn't want to have some whirlwind educational experience. I wanted to know what I was doing when I was done with whichever program we decided on.
+        </p>
+        <p>
+          Another two years later and I have finished their Core Curriculum and am now working on their Advanced Elective courses learning to work with different libraries and frameworks. I am very glad that we chose <a href="https://launchschool.com/" target="_blank">LaunchSchool</a>. I feel very confident with the knowledge and skills that I have gained working through their program.
+        </p>
+        <h2>Skills Overview</h2>
+        <div id="skills-chart">
+<!--          <div id="col-name">Proficiency</div>-->
+          <div id="beginner" class="level">Beginner</div>
+          <div id="intermediate" class="level">Intermediate</div>
+          <div id="advanced" class="level">Advanced</div>
+          <div id="expert" class="level">Expert</div>
+          <div class="label">Ruby</div>
+          <div id="skill-ruby" class="bar"></div>
+          <div class="label">JavaScript</div>
+          <div id="skill-javascript" class="bar"></div>
+          <div class="label">HTML</div>
+          <div id="skill-html" class="bar"></div>
+          <div class="label">CSS</div>
+          <div id="skill-css" class="bar"></div>
+          <div class="label">SQL</div>
+          <div id="skill-sql" class="bar"></div>
+          <div class="label">PHP</div>
+          <div id="skill-php" class="bar"></div>
+        </div>
+      </article>
+    </script>
+    
+    <script id="mine" type="text/x-handlebars">
+      <article id="mine">
+        <h2>My projects</h2>
+        <p>This is a collection of projects that I have built from scratch. Clicking on the image will take you to the actual web app and clicking on the project title will toggle specific details about each project. These apps are hosted for free on Heroku and may take a few seconds to load at first.</p>
+        <section class="projects">
+          <section class="project">
+            <a href="https://fort-stats.herokuapp.com/" target="_blank">
+              <div class="image-overlay"></div>
+              <img src="assets/images/fort-stats.png">
+            </a>
+            <article>
+              <h3 data-id="toggle-info">FortStats</h3>
+              <section class="info hidden">
+                <dl>
+                  <dt>Overview:</dt>
+                  <dd>
+                    This was the first project I did on my own after completing the backend courses. I wanted a fun site that my family and I could enter in our game stats and compare them to each other.
+                  </dd>
+                  <dt>Backend:</dt>
+                  <dd>
+                    This project uses Ruby Sinatra on the backend and uses the "pg" gem along with PostgreSQL for the database.
+                  </dd>
+                  <dt>Frontend:</dt>
+                  <dd>
+                    At this point in the curriculum I did not know any JavaScript and only knew basic HTML and CSS.
+                  </dd>
+                  <dt>Optimzed for:</dt>
+                  <dd>
+                    Small screens like cell phones.
+                  </dd>
+                </dl>
+              </section>
+            </article>
+          </section>
+          <section class="project">
+            <a href="https://crochet-demo.herokuapp.com/projects" target="_blank">
+              <div class="image-overlay"></div>
+              <img src="assets/images/crochet-projects.png">
+            </a>
+            <article>
+              <h3 data-id="toggle-info">Crochet Projects</h3>
+              <section class="info hidden">
+                <dl>
+                  <dt>Overview:</dt>
+                  <dd>
+                    I made this app for my wife so she could keep track of crochet projects that she starts. She likes to start multiple crochet projects at once and wanted a good way to keep track of what she needed to get going on each project.
+                  </dd>
+                  <dt>Backend:</dt>
+                  <dd>
+                    This project uses Ruby Sinatra on the backend and uses the "pg" gem along with PostgreSQL for the database.
+                  </dd>
+                  <dt>Frontend:</dt>
+                  <dd>
+                    This project uses jQuery for simple DOM manipulation and AJAX requests.
+                  </dd>
+                  <dt>Optimzed for:</dt>
+                  <dd>
+                    Small screens like cell phones.
+                  </dd>
+                </dl>
+              </section>
+            </article>
+          </section>
+          <section class="project">
+            <a href="https://file-cms.herokuapp.com/" target="_blank">
+              <div class="image-overlay"></div>
+              <img src="assets/images/file-cms.png">
+            </a>
+            <article>
+              <h3 data-id="toggle-info">File-Based CMS</h3>
+              <section class="info hidden">
+                <dl>
+                  <dt>Overview:</dt>
+                  <dd>
+                    This is a very basic Content Management System. It allows you to create, view, edit and delete files from the browser. Since it is deployed on Heroku, files are automatically deleted if the server is inactive for a time.
+                  </dd>
+                  <dt>Backend:</dt>
+                  <dd>
+                    This project uses Ruby Sinatra on the backend for requests and responses and uses the Ruby File and IO classes to manipulate files.
+                  </dd>
+                  <dt>Frontend:</dt>
+                  <dd>
+                    In this project I use plain JavaScript for DOM manipulation and XHR/AJAX requests. I also used Handlebars to handle the frontend templating.
+                  </dd>
+                  <dt>Optimzed for:</dt>
+                  <dd>
+                    Desktop screen, at least 1400px wide.
+                  </dd>
+                </dl>
+              </section>
+            </article>
+          </section>
+          <section class="project">
+            <a href="/pokemon/poke.html" target="_blank">
+              <div class="image-overlay"></div>
+              <img src="assets/images/pokemon.png">
+            </a>
+            <article>
+              <h3 data-id="toggle-info">Pokemon API</h3>
+              <section class="info hidden">
+                <dl>
+                  <dt>Overview:</dt>
+                  <dd>
+                    This is a very simple frontend only project that I made to practice sending a request to an API service, receiving and parsing the response and rendering it to the broswer.
+                  </dd>
+                  <dt>Backend:</dt>
+                  <dd>
+                    None.
+                  </dd>
+                  <dt>Frontend:</dt>
+                  <dd>
+                    In this project I use plain JavaScript for DOM manipulation and XHR/AJAX requests. I also used Handlebars to handle the frontend templating.
+                  </dd>
+                  <dt>Optimzed for:</dt>
+                  <dd>
+                    Desktop or tablet.
+                  </dd>
+                </dl>
+              </section>
+            </article>
+          </section>
+        </section>
+      </article>
+    </script>
+    
+    <script id="school" type="text/x-handlebars">
+      <article id="projects">
+        <h2>School Projects</h2>
+        <p>This is just a few projects that were done as assignments during my time at <a href="https://launchschool.com/" target="_blank">LaunchSchool</a>. Although I built many more projects than this throughout their curriculum, I have only included the ones where no solution was provided. In other words, I still coded these projects, but they were not my brain-children. Again, click the project title for specifics.</p>
+        <section class="projects">
+          <section class="project">
+            <a href="#" target="_blank">
+              <div class="image-overlay"></div>
+              <img src="https://via.placeholder.com/380x200.jpg?text=Website+Image">
+            </a>
+            <article>
+              <h3 data-id="toggle-info">FortStats</h3>
+              <section class="info hidden">
+                <dl>
+                  <dt>Overview:</dt>
+                  <dd>
+                    This was the first project I did on my own after completing the backend courses. I wanted a fun site that my family and I could enter in our game stats and compare them to each other.
+                  </dd>
+                  <dt>Backend:</dt>
+                  <dd>
+                    This project uses Ruby Sinatra on the backend and uses the "pg" gem along with PostgreSQL for the database.
+                  </dd>
+                  <dt>Frontend:</dt>
+                  <dd>
+                    At this point in the curriculum I did not know any JavaScript and only knew basic HTML and CSS.
+                  </dd>
+                  <dt>Optimzed for:</dt>
+                  <dd>
+                    Small screens like cell phones.
+                  </dd>
+                </dl>
+              </section>
+            </article>
+          </section>
+          <section class="project">
+            <a href="#" target="_blank">
+              <div class="image-overlay"></div>
+              <img src="https://via.placeholder.com/380x200.jpg?text=Website+Image">
+            </a>
+            <article>
+              <h3 data-id="toggle-info">FortStats</h3>
+              <section class="info hidden">
+                <dl>
+                  <dt>Overview:</dt>
+                  <dd>
+                    This was the first project I did on my own after completing the backend courses. I wanted a fun site that my family and I could enter in our game stats and compare them to each other.
+                  </dd>
+                  <dt>Backend:</dt>
+                  <dd>
+                    This project uses Ruby Sinatra on the backend and uses the "pg" gem along with PostgreSQL for the database.
+                  </dd>
+                  <dt>Frontend:</dt>
+                  <dd>
+                    At this point in the curriculum I did not know any JavaScript and only knew basic HTML and CSS.
+                  </dd>
+                  <dt>Optimzed for:</dt>
+                  <dd>
+                    Small screens like cell phones.
+                  </dd>
+                </dl>
+              </section>
+            </article>
+          </section>
+          <section class="project">
+            <a href="#" target="_blank">
+              <div class="image-overlay"></div>
+              <img src="https://via.placeholder.com/380x200.jpg?text=Website+Image">
+            </a>
+            <article>
+              <h3 data-id="toggle-info">FortStats</h3>
+              <section class="info hidden">
+                <dl>
+                  <dt>Overview:</dt>
+                  <dd>
+                    This was the first project I did on my own after completing the backend courses. I wanted a fun site that my family and I could enter in our game stats and compare them to each other.
+                  </dd>
+                  <dt>Backend:</dt>
+                  <dd>
+                    This project uses Ruby Sinatra on the backend and uses the "pg" gem along with PostgreSQL for the database.
+                  </dd>
+                  <dt>Frontend:</dt>
+                  <dd>
+                    At this point in the curriculum I did not know any JavaScript and only knew basic HTML and CSS.
+                  </dd>
+                  <dt>Optimzed for:</dt>
+                  <dd>
+                    Small screens like cell phones.
+                  </dd>
+                </dl>
+              </section>
+            </article>
+          </section>
+          <section class="project">
+            <a href="#" target="_blank">
+              <div class="image-overlay"></div>
+              <img src="https://via.placeholder.com/380x200.jpg?text=Website+Image">
+            </a>
+            <article>
+              <h3 data-id="toggle-info">FortStats</h3>
+              <section class="info hidden">
+                <dl>
+                  <dt>Overview:</dt>
+                  <dd>
+                    This was the first project I did on my own after completing the backend courses. I wanted a fun site that my family and I could enter in our game stats and compare them to each other.
+                  </dd>
+                  <dt>Backend:</dt>
+                  <dd>
+                    This project uses Ruby Sinatra on the backend and uses the "pg" gem along with PostgreSQL for the database.
+                  </dd>
+                  <dt>Frontend:</dt>
+                  <dd>
+                    At this point in the curriculum I did not know any JavaScript and only knew basic HTML and CSS.
+                  </dd>
+                  <dt>Optimzed for:</dt>
+                  <dd>
+                    Small screens like cell phones.
+                  </dd>
+                </dl>
+              </section>
+            </article>
+          </section>
+        </section>
+      </article>
+    </script>
+    
+  </body>
+</html>

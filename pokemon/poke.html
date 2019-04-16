@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/poke.css">
+  <link rel="icon" type="image/x-icon" href="images/pokeball-256624/favicon.ico"/>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  <script src="javascripts/poke.js"></script>
+  <title>Pokemon</title>
+</head>
+<body>
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2000px-International_Pok%C3%A9mon_logo.svg.png">
+    <nav>
+      <ul>
+        <li><a href="#" data-type="nav" data-id="home">Home</a></li>
+        <li><a href="#" data-type="nav" data-id="pokemon">Pokemon</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+  </main>
+  
+  <script type="text/x-handlebars" id="home">
+    <h2>Pokeinfo</h2>
+    <p>This is yet another practice project using <a data-type="api" href="https://pokeapi.co/" target="_blank">this API</a>.</p>
+  </script>
+  
+  <script type="text/x-handlebars" id="pokemon">
+    <h2>Pokemon Listing</h2>
+    <section>
+      <ul id="pokemon_list">
+        {{#each results}}
+        <li><a data-type="pokemon" href="{{url}}">{{name}}</a></li>
+        {{/each}}
+      </ul>
+    </section>
+    <section id="pokemon_info">
+      
+    </section>
+    <nav>
+      {{#if previous}}
+      <a data-type="page" href="{{previous}}">Previous Page</a>
+      {{/if}}
+      <a data-type="page" href="{{next}}">Next Page</a>
+    </nav>
+  </script>
+  
+  <script type="text/x-handlebars" id="pokemon_details">
+    <section class="info">
+      <h3>{{name}} - #{{order}}</h3>
+      <img src="{{pic}}">
+    </section>
+    <section class="info">
+      <h4>Pokemon Type</h4>
+      <p>
+      {{#each types}}
+        <span>{{.}}</span>
+      {{/each}}
+    </p>
+    </section>
+    <section class="info">
+      <h4>Height</h4>
+      <p>{{height}}</p>
+    </section>
+    <section class="info">
+      <h4>Weight</h4>
+      <p>{{weight}} lbs.</p>
+    </section>
+  </script>
+</body>
+</html>

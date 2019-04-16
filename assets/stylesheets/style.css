@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body {
+/*  background: #828282;*/
+  font-family: 'PT Sans', sans-serif;
+}
+
+a {
+  color: #59ABDB;
+}
+
+a:hover {
+  color: #66C3FA;
+}
+
+/* ---------------------------------------- HEADER ----------------------------------- */
+
+header {
+  background: #4F4F4F;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+
+h1 {
+  color: #17AD6F;
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+header p {
+  color: #fff;
+}
+
+span.string {
+  color: #59ABDB;
+}
+
+/* ---------------------------------------- NAV ----------------------------------- */
+
+nav {
+  margin-top: 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  
+}
+
+nav a {
+  background: #4F4F4F;
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+  width: 150px;
+}
+
+nav a.active {
+  border: none;
+  color: #9C9C9C;
+}
+
+nav a.active:hover {
+  color: #9C9C9C;
+  cursor: text;
+}
+
+/*
+nav a.active::after {
+  content: '^';
+  display: inline-block;
+  margin-left: 3px;
+  transform: rotate(180deg);
+  vertical-align: text-top;
+}
+*/
+
+/* ---------------------------------------- MAIN ----------------------------------- */
+
+main {
+  margin: 0 auto 0 auto;
+  width: 800px;
+}
+
+main > article {
+  margin: 20px 0;
+}
+
+h2 {
+  color: #17AD6F;
+  font-size: 24px;
+  margin: 0 auto 20px auto;
+  padding: 10px 0;
+  text-align: center;
+}
+
+article > p {
+/*  color: #fff;*/
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* ---------------------------------------- PROJECTS ----------------------------------- */
+
+section.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section.projects .project {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+}
+
+section.project > a {
+  display: block;
+  height: 200px;
+}
+
+section.project .image-overlay {
+  background-color: rgba(79, 79, 79, 0.5);
+  height: 200px;
+  position: absolute;
+  transition: background-color 0.5s ease;
+  width: 380px;
+}
+
+section.project img {
+  height: 200px;
+  width: 380px;
+}
+
+section.project .image-overlay:hover {
+  background-color: rgba(79, 79, 79, 0);
+}
+
+section.project article > h3 {
+  background: #4F4F4F;
+  color: #59ABDB;
+  cursor: pointer;
+  padding: 4px 0;
+  text-align: center;
+  transition: color 0.8s ease;
+}
+
+section.project article > h3:hover {
+  color: #17AD6F;
+}
+
+section.project article {
+  width: 380px;
+}
+
+section.projects .info {
+  background: #fff;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+  color: #4F4F4F;
+  padding: 5px;
+  position: absolute;
+  width: 380px;
+  z-index: 2;
+}
+
+section.projects section.hidden {
+  display: none;
+  margin-bottom: 10px;
+}
+
+dt {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+dd {
+  margin-bottom: 5px;
+}
+
+/* ---------------------------------------- SKILLS ----------------------------------- */
+
+div#skills-chart {
+  background: #4F4F4F;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 75px repeat(100, 1fr);
+  grid-template-rows: 15px repeat(6, 1fr);
+  grid-row-gap: 5px;
+  margin: 0 auto;
+  height: 480px;
+  padding: 5px;
+  width: 800px;
+}
+
+/*
+div#col-name {
+  font-size: 20px;
+  grid-column-start: 1;
+  grid-column-end: 102;
+  text-align: center;
+}
+*/
+
+div#beginner {
+  grid-column-start: 2;
+  grid-column-end: 33;
+}
+
+div#intermediate {
+  grid-column-start: 33;
+  grid-column-end: 64;
+}
+
+div#advanced {
+  grid-column-start: 64;
+  grid-column-end: 95;
+}
+
+div#expert {
+  grid-column-start: 95;
+  grid-column-end: 102;
+}
+
+div.label {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-content: flex-end;
+  margin: auto 5px auto 0;
+}
+
+div.bar {
+  background: #17AD6F;
+  border-radius: 0 5px 5px 0;
+  grid-column-start: 2;
+  grid-column-end: 102;
+}
+
+div#skill-ruby {
+  grid-column-end: 71;
+}
+
+div#skill-javascript {
+  grid-column-end: 71;
+}
+
+div#skill-html {
+  grid-column-end: 61;
+}
+
+div#skill-css {
+  grid-column-end: 61;
+}
+
+div#skill-sql {
+  grid-column-end: 38;
+}
+
+div#skill-php {
+  grid-column-end: 13;
+}
